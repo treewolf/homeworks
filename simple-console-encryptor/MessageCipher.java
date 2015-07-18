@@ -2,7 +2,7 @@
 /**
  * This class is where the user will interact with the gui. I will leave the gui
  * building up to you. It is also up to you if you want error checking. For now,
- * we will assume the user only uses letters in the English alphabet.
+ * we will assume the user only uses letters in the English alphabet and no spaces.
  */
 class MessageCipher {
 
