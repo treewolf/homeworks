@@ -1,11 +1,18 @@
 
-It is your job, whether or not you choose to accept it, to implement a program that uses two forms of encoding and decoding.  Write an interface called MessageCipher which has two method definitions encode and decode, in which both method take in and return a string.
+It is your job, whether or not you choose to accept it, to implement a program that uses two forms of encoding and decoding.
+Write an interface called MessageCipher which has two method definitions encode and decode, in which both method take in
+and return a string.
  
-Write a class called SubstitutionCipher which uses the interface, requires a shift value, and encodes and decodes strings based on substitution cipher.  Encoding with substitution cipher shifts each letter over by a given shift value.  For instance, if the given string to encode was “abcd” and the shift value was 3 then the output would be “dfgh”.  Decoding simply works in reverse.
+Write a class called SubstitutionCipher which uses the interface, requires a shift value, and encodes and decodes strings
+based on substitution cipher.  Encoding with substitution cipher shifts each letter over by a given shift value.  For instance,
+if the given string to encode was “abcd” and the shift value was 3 then the output would be “dfgh”.  Decoding simply works
+in reverse.
  
-Write another class ShuffleCipher which uses the interfaces, requires a shuffle value, and encodes and decodes strings based on shuffle cipher.  Encoding with shuffle cipher works by splitting the message in half and then alternating the letters from one string to another, and this repeats based on the number of shuffles.  For instance, if the input message was “abcdef” the encoded message would be “adbecf”.  Decoding simply works in reverse.
+Write another class ShuffleCipher which uses the interfaces, requires a shuffle value, and encodes and decodes strings based
+on shuffle cipher.  Encoding with shuffle cipher works by splitting the message in half and then alternating the letters
+from one string to another, and this repeats based on the number of shuffles.  For instance, if the input message was
+“abcdef” the encoded message would be “adbecf”.  Decoding simply works in reverse.
  
-Finally write a file that demonstrates encoding and decoding with a few different instances of both.  Also make sure for substitution there is at least one example involving the letter ‘z’ having to start back at the beginning of the alphabet.
- 
- 
+Finally write a file that demonstrates encoding and decoding with a few different instances of both.  Also make sure for
+substitution there is at least one example involving the letter ‘z’ having to start back at the beginning of the alphabet.
 
