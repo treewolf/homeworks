@@ -1,5 +1,5 @@
 /**
- * License plate generator, default is set to 20 plates. Three numbers which cannot start with 0 and
+ * License plate generator, default is set to 20 plates. A three digit number which cannot start with 0 and
  * three letters in uppercase.
  * 
  * @author treewolf
