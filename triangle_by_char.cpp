@@ -1,4 +1,6 @@
 #include <iostream>
+
+//this is the character that will be forming triangle
 #define c '|'
 
 void level(int k);
