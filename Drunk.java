@@ -1,4 +1,3 @@
-
 /**
  * A student has decided to celebrate the start of Spring Break by getting a bit
  * smashed. Her home is at 1st street and main street, and the jail is at 11th
@@ -17,13 +16,28 @@
  * upon your drunkWalk()method N times (where N is a final variable). Finally,
  * have it calculate and print the average number of blocks that the student
  * took for one trip, to one decimal place. Here’s what your program might look
- * like in action, with N equal to 5: Here we go again... time for a walk!
- * Walked 37 blocks, and Landed at HOME Here we go again... time for a walk!
- * Walked 19 blocks, and Landed in JAIL Here we go again... time for a walk!
- * Walked 13 blocks, and Landed in JAIL Here we go again... time for a walk!
- * Walked 25 blocks, and Landed in JAIL  Here we go again... time for a walk!
- * Walked 15 blocks, and Landed at HOME Average # of blocks equals 21.8
- *
+ * like in action, with N equal to 5:
+ * 
+ * Here we go again... time for a walk!
+ * Walked 37 blocks, and 
+ * Landed at HOME 
+ * 
+ * Here we go again... time for a walk!
+ * Walked 19 blocks, and 
+ * Landed in JAIL 
+ * 
+ * Here we go again... time for a walk!
+ * Walked 13 blocks, and 
+ * Landed in JAIL 
+ * 
+ * Here we go again... time for a walk!
+ * Walked 25 blocks, and 
+ * Landed in JAIL  
+ * 
+ * Here we go again... time for a walk!
+ * Walked 15 blocks, and 
+ * Landed at HOME
+ * Average # of blocks equals 21.8
  */
 class Drunk {
 
