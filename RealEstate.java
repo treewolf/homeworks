@@ -1,4 +1,6 @@
 /**
+ * 
+ * @author treewolf
  * Real estate agent advertisements frequently contain words from which all
  * vowels — except for an initial one — have been removed.
  * Thus, Desirable unfurnished flat in quiet residential area might become: 
