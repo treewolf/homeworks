@@ -1,6 +1,8 @@
 /**
  * License plate generator, default is set to 20 plates. A three digit number which cannot start with 0 and
- * three letters in uppercase.
+ * three letters in uppercase. Write a program that prints 20 “random” license plate numbers, each one
+ * consisting of three randomly-chosen digits followed by three randomly chosen upper-case letters.
+ * The first digit cannot be zero.
  * 
  * @author treewolf
  */
