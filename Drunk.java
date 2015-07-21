@@ -1,4 +1,5 @@
 /**
+ * @author treewolf
  * A student has decided to celebrate the start of Spring Break by getting a bit
  * smashed. Her home is at 1st street and main street, and the jail is at 11th
  * street. and main street. The student starts at 6th street and main street and
