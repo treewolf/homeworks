@@ -11,5 +11,5 @@
 0	0	0	0	0	0	0	0	0	0
 
 Gets numbers in between two parameters
-Input - minumum integer
+input - minumum integer
 input - maximum integer
