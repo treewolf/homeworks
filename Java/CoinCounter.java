@@ -1,4 +1,5 @@
 /**
+* @Author - treewolf
 * Write a Java program that reads from an input file whose data is a series of pairs of tokens, where each pair
 * begins with an integer value and is followed by the type of coin, which will be “pennies” (1 cent each), “nickels”
 * (5 cents each), “dimes” (10 cents each), or “quarters” (25 cents each), case-insensitively. Your program should add
