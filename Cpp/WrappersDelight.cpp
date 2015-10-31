@@ -34,7 +34,6 @@
 #include <fstream>	//ifstream(), is_open()
 #include <sstream>	//streamstream(), getline()
 #include <cstring>	//std::string, c_str(), size()
-#include <stdlib.h>	//free()
 
 unsigned int lines, max_width;
 std::string text;
