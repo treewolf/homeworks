@@ -29,10 +29,10 @@
 			    		    		                            	  boogie, the beat.		
 			
 **/
-#include <cstdio>;	//printf(), flose();
+#include <cstdio>	//printf(), flose();
 #include <vector>	//std::vector<>, push_back()
 #include <fstream>	//ifstream(), is_open()
-#include <sstream>;	//streamstream(), getline()
+#include <sstream>	//streamstream(), getline()
 #include <cstring>	//std::string, c_str(), size()
 #include <stdlib.h>	//free()
 
