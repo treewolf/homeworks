@@ -1,2 +1,3 @@
 #Assembly language
-This directory holds assembly language for Windows 98
+This directory holds assembly language
+ - dos assembly => .asm16
