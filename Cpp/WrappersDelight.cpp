@@ -83,6 +83,7 @@ void format_and_print(){
 			longest_word_size = word.size();
 		}
 	}
+	
 	//error check for longer word than width allowed
 	if(longest_word_size > max_width){
 		printf("Error. Expected width too small for text. Program will terminate.");
