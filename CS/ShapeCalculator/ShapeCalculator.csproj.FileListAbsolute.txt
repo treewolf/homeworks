@@ -1,0 +1,18 @@
+C:\Users\wellst\Dropbox\TEACHING\MIS 15\Exams\Midterm\ShapeCalculator\ShapeCalculator\ShapeCalculator\bin\Debug\ShapeCalculator.exe.config
+C:\Users\wellst\Dropbox\TEACHING\MIS 15\Exams\Midterm\ShapeCalculator\ShapeCalculator\ShapeCalculator\bin\Debug\ShapeCalculator.exe
+C:\Users\wellst\Dropbox\TEACHING\MIS 15\Exams\Midterm\ShapeCalculator\ShapeCalculator\ShapeCalculator\bin\Debug\ShapeCalculator.pdb
+C:\Users\wellst\Dropbox\TEACHING\MIS 15\Exams\Midterm\ShapeCalculator\ShapeCalculator\ShapeCalculator\obj\Debug\ShapeCalculator.csprojResolveAssemblyReference.cache
+C:\Users\wellst\Dropbox\TEACHING\MIS 15\Exams\Midterm\ShapeCalculator\ShapeCalculator\ShapeCalculator\obj\Debug\ShapeCalculator.Form1.resources
+C:\Users\wellst\Dropbox\TEACHING\MIS 15\Exams\Midterm\ShapeCalculator\ShapeCalculator\ShapeCalculator\obj\Debug\ShapeCalculator.Properties.Resources.resources
+C:\Users\wellst\Dropbox\TEACHING\MIS 15\Exams\Midterm\ShapeCalculator\ShapeCalculator\ShapeCalculator\obj\Debug\ShapeCalculator.csproj.GenerateResource.Cache
+C:\Users\wellst\Dropbox\TEACHING\MIS 15\Exams\Midterm\ShapeCalculator\ShapeCalculator\ShapeCalculator\obj\Debug\ShapeCalculator.exe
+C:\Users\wellst\Dropbox\TEACHING\MIS 15\Exams\Midterm\ShapeCalculator\ShapeCalculator\ShapeCalculator\obj\Debug\ShapeCalculator.pdb
+C:\Users\CBAUser\Downloads\ShapeCalculator\ShapeCalculator\ShapeCalculator\bin\Debug\ShapeCalculator.exe.config
+C:\Users\CBAUser\Downloads\ShapeCalculator\ShapeCalculator\ShapeCalculator\obj\Debug\ShapeCalculator.exe
+C:\Users\CBAUser\Downloads\ShapeCalculator\ShapeCalculator\ShapeCalculator\obj\Debug\ShapeCalculator.pdb
+C:\Users\CBAUser\Downloads\ShapeCalculator\ShapeCalculator\ShapeCalculator\bin\Debug\ShapeCalculator.exe
+C:\Users\CBAUser\Downloads\ShapeCalculator\ShapeCalculator\ShapeCalculator\bin\Debug\ShapeCalculator.pdb
+C:\Users\CBAUser\Downloads\ShapeCalculator\ShapeCalculator\ShapeCalculator\obj\Debug\ShapeCalculator.csprojResolveAssemblyReference.cache
+C:\Users\CBAUser\Downloads\ShapeCalculator\ShapeCalculator\ShapeCalculator\obj\Debug\ShapeCalculator.Form1.resources
+C:\Users\CBAUser\Downloads\ShapeCalculator\ShapeCalculator\ShapeCalculator\obj\Debug\ShapeCalculator.Properties.Resources.resources
+C:\Users\CBAUser\Downloads\ShapeCalculator\ShapeCalculator\ShapeCalculator\obj\Debug\ShapeCalculator.csproj.GenerateResource.Cache
