@@ -1,0 +1,14 @@
+run:
+*-- Building basic chain: Head,Middle,Tail --*
+List: Head,Middle,Tail
+-- Adding new head: NewHead
+List: NewHead,Head,Middle,Tail
+-- Adding new tail: NewTail
+List: NewHead,Head,Middle,Tail,NewTail
+-- Removing first: NewHead
+List: Head,Middle,Tail,NewTail
+-- Removing last: NewTail
+List: Head,Middle,Tail
+-- Removing element 2:Middle
+List: Head,Tail
+BUILD SUCCESSFUL (total time: 0 seconds)
