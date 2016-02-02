@@ -1,5 +1,5 @@
 /**
- * @author treewolf
+ * 
 Homework 1
 A Later Time
 Objective:
@@ -33,6 +33,8 @@ e.g. Integer.parseInt("100") returns the integer 100.
 Note that the String given to parseInt must not have any characters other than numbers, or your program will crash
 Finally:
 Upload to Dropbox.
+
+@author treewolf
  */
 public class Later {
     public static void main(String [] args){
