@@ -85,6 +85,5 @@ public class LinkedList<E> {
             return item;
         }
         return item;
-    }
-    
+    }    
 }
