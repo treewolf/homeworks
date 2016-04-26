@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+javac -Xlint Runner.java RedBlackBST.java
+java Runner
