@@ -1,4 +1,4 @@
-/*  Joshua Fong                            */
+/*  Treewolf                           */
 /*  Program 5                              */
 
 #include <stdio.h>
@@ -132,7 +132,7 @@ FILE * open_out_file (void)
 		printf("Error on fopen of %s \n", OUT_FILENAME);
 		exit(EXIT_FAILURE);
 	}
-	fprintf(outfile, "\nJosh Fong.  Program 5 output. \n");
+	fprintf(outfile, "\nTreewolf.  Program 5 output. \n");
 
 	return outfile;
 }
