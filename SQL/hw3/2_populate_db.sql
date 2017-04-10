@@ -17,7 +17,7 @@ VALUES
 	('CSC130', 5, 'Y. Chen'),
 	('CSC133', 12, 'M. Biroge'),
 	('CSC133', 8, 'P. Dotti'),
-	('CSC133', 6, '). Dotti'),
+	('CSC133', 6, 'P. Dotti'),
 	('CSC134', 3, 'X. Sun'),
 	('CSC137', 2, 'G. Morris'),
 	('PHIL4', 1, 'H. Abrilia'),
