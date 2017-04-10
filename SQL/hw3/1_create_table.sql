@@ -24,7 +24,7 @@ CREATE TABLE Section(
 );
 
 CREATE TABLE Student(
-	SSN INT PRIMARY KEY,
+	SSN BIGINT PRIMARY KEY,
 	FirstName VARCHAR(30),
 	LastName VARCHAR(30),
 	Street VARCHAR(50),
@@ -35,7 +35,7 @@ CREATE TABLE Student(
 );
 
 CREATE TABLE Enrolls(
-	SSN INT,
+	SSN BIGINT,
 	SectionNo INT,
 	CourseNo VARCHAR(10),
 	PRIMARY KEY (SSN, SectionNo, CourseNo),
@@ -56,13 +56,14 @@ CREATE TABLE Exam(
 	E_Time TIME,
 	PRIMARY KEY (ExamNo, SectionNo, CourseNo),
 	FOREIGN KEY (CourseNo) REFERENCES Section (CourseNo),
+	FOREIGN KEY (SectionNo) REFERENCES Section (SectionNo),
 	INDEX (CourseNo),
 	INDEX (SectionNo),
 	INDEX (ExamNo)
 );
 
 CREATE TABLE Takes(
-	SSN INT,
+	SSN BIGINT,
 	CourseNo VARCHAR(10),
 	SectionNo INT,
 	ExamNo INT,
