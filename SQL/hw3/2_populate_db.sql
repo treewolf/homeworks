@@ -1,6 +1,3 @@
-/* set database */
-USE cs13435;
-
 /* values for Course */
 INSERT INTO Course (CourseNo, CourseName, Department)
 VALUES
