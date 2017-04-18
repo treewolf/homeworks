@@ -40,7 +40,7 @@ CREATE TABLE Enrolls(
 	CourseNo VARCHAR(10),
 	PRIMARY KEY (SSN, SectionNo, CourseNo),
 	FOREIGN KEY (SSN) REFERENCES Student (SSN),
-	FOREIGN KEY (SectionNo) REFERENCES Section (SectionNo),
+	FOREIGN KEY (SectionNo) REFERENCES Section (SectionNo), 
 	FOREIGN KEY (CourseNo) REFERENCES Section (CourseNo)
 );
 

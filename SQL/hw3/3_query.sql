@@ -15,8 +15,7 @@ SELECT Enrolls.CourseNo,Enrolls.SectionNo,Course.CourseName
 FROM Enrolls,Course
 WHERE Enrolls.CourseNo = Course.CourseNo
 GROUP BY Enrolls.CourseNo,Enrolls.SectionNo
-HAVING COUNT(DISTINCT Enrolls.SSN) >= 3
-;
+HAVING COUNT(DISTINCT Enrolls.SSN) >= 3;
 
 /*	Query4	*/
 SELECT Student.SSN,Student.FirstName,Student.LastName
@@ -33,8 +32,7 @@ FROM 	(SELECT *
 	) AS rvr
 INNER JOIN Exam ON rvr.CourseNo = Exam.CourseNo AND rvr.SectionNo = Exam.SectionNo
 	AND rvr.ExamNo = Exam.ExamNo
-INNER JOIN ClassRoom ON rvr.RoomNo = ClassRoom.RoomNo AND rvr.Building = ClassRoom.Building
-;
+INNER JOIN ClassRoom ON rvr.RoomNo = ClassRoom.RoomNo AND rvr.Building = ClassRoom.Building;
 
 /*	Query6	*/
 SELECT Student.SSN, Student.FirstName, Student.LastName
