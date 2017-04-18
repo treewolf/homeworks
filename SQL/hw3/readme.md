@@ -4,3 +4,5 @@ You can just call them from SQL in numerical order:
 mysql> source <file.sql>
 ```
 or you can just run the "reset.sql" file to make the process faster.
+
+Homework instructions in hw3.pdf
