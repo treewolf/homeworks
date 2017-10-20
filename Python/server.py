@@ -14,7 +14,7 @@ from socket import *
 host = '127.0.0.1'         
 port = 8888   
 
-#filesystem for server. is the same directory as the server
+#filesystem for server. is the same directory as the server with root directory for sec. need dir traversal protection
 root = os.getcwd()+'/www'  
 
 #____FUNCTIONS________________________________________________________________
