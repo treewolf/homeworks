@@ -14,33 +14,48 @@ from socket import *
 host = '127.0.0.1'         
 port = 8888   
 
-#filesystem for server. is the same directory as the server with root directory for sec. need dir traversal protection
+#filesystem for server. Recommended to keep default, with server file outside dir serving pages
 root = os.getcwd()+'/www'  
 
 #____FUNCTIONS________________________________________________________________
 
-#determine if file exists
+#determine if file exists, within root dir
+#directory security
 def fileExists(filename):
-	return os.path.exists(root+filename)
+	file = os.path.realpath(root+filename)	#real path returns absolute pathname. eg root/www/../ => root/
+	return (os.path.commonprefix([file, root]) == root and os.path.exists(file))	#see if file and root directory has same directory= root dir. and file exist	
+
+#get current date and time
+def request_datetime():
+	return datetime.datetime.now().strftime("%m-%d-%Y %H:%M:%S")
 
 #404 file not found
-#do not need a file for this
-def status_404(conn):
-	conn.send('HTTP/1.1 404 Not Found\r\nDate: ' + datetime.datetime.now().strftime("%m-%d-%Y %H:%M") + '\r\n\r\n')
-	return
+#server simple file not found
+def status_404(conn, filename):
+	print '--invalid file: ' + filename 
+	conn.send('HTTP/1.1 404 Not Found\r\n')
+	conn.send('Host: ' + root + ': %d\r\n' % port)
+	conn.send('Date: %s\r\n' % request_datetime())
+	conn.send('\r\n')
+	#conn.send('HTTP/1.1 404 Not Found\r\nHost: ' + root + ': %d\r\nDate: ' + request_datetime() + '\r\n\r\n' % port)
+	conn.send('<html><head><title>Not Found</title></head><body>404 Not Found</body></html>\n')
 
 #GET request
 #file check here, since this is special for GET
 #recieves request and returns result
 def request_GET(conn, request_body):
 	if fileExists(request_body):
-		file = open(root+request_body, 'rb') #opens file for reading as binary		
+		file = open(root+request_body, 'rb') #opens file for reading as binary, don't need absolute path since fileExists() verifies already		
+
 		#serve http header- header must end with CRLF. /r-carriage ret /n-line feed
         	# header + empty line + data    SEE NOTES
-        	conn.send('HTTP/1.1 200 OK\r\nContent-Type: text/html\r\nDate: ' + datetime.datetime.now().strftime("%m-%d-%Y %H:%M") + '\r\n\r\n')
+       		conn.send('HTTP/1.1 200 OK\r\n')
+        	conn.send('Host: ' + root + ': %d\r\n' % port)
+        	conn.send('Date: %s\r\n' % request_datetime())
+        	conn.send('\r\n') 
+	#	conn.send('HTTP/1.1 200 OK\r\nContent-Type: text/html\r\nHost: ' + root + ': %d\r\nDate: ' + request_datetime() + '\r\n\r\n' % port)
 
-        	#if file is bigger than 1024, read, else subtract and send remaining bytes
-        	# repeat                              
+        	#if file is bigger than 1024, read, else subtract and send remaining bytes, repeat
         	file.seek(0, 2)         #get fd relative to end of file, starting at byte 0
         	file_size = file.tell() #file.tell() returns current fd
         	file.seek(0)            #reset fd to beginning of file
@@ -63,7 +78,7 @@ def request_GET(conn, request_body):
 		file.close()
 	else:
 		#send 404
-		status_404(conn)
+		status_404(conn, request_body)
 
 
 #should only accept POST, GET, HEAD, PUT -max 4 char, min 3 char
@@ -73,7 +88,7 @@ def parseData(conn, data):
 	m = re.search(r'.*HTTP/1.1', data, re.S|re.M)
 	req_method = m.group()[:4].strip()
 	req_body = m.group()[4:-9]
-	if req_body is None or req_body == '/':
+	if req_body is None or req_body == '/':		#if no body, assume is GET request and return index.html
 		request_GET(conn, '/index.html')
 	elif req_method == 'GET':
 		request_GET(conn, req_body)	
@@ -107,7 +122,7 @@ while 1:
 	print 'socket closed: client ', addr
 	conn.close()
 
-#server shuts down, shutdown releases connection faster
+#server shuts down, shutdown releases connection faster, for some reason socket may not be release quick
 serverSocket.shutdown()
 serverSocket.close()
 
