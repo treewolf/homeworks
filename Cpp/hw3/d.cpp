@@ -1,8 +1,6 @@
 #define INPUT_FILE "rr_input.txt"
 
-#include <algorithm> //sort
 #include <cstdio> //in out
-#include <cstring> //strtok
 #include <deque>
 #include <fstream> //file
 #include <iomanip> //setprecision
