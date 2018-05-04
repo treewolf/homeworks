@@ -1,0 +1,11 @@
+process#	arrival time	cpu burst length	priiority
+
+are the cols for program output.
+priority smaller number means higher priority
+
+pr_withPREMP:
+	p1 0-3
+	p2 3-4
+	p1 4-6
+	p4 6-8
+
